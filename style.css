@@ -1,0 +1,143 @@
+* {
+    margin: 0 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    /* border: 2px solid red; */
+
+
+
+}
+
+.navbar__logo {
+    font-size: 4vw;
+}
+
+.navbar__links {
+    display: flex;
+    font-size: 2.5vw;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+.main {
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+
+}
+
+.main__img img {
+    width: 50%;
+
+
+
+}
+
+.main__text {
+    width: 50%;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 14rem; */
+
+}
+
+.footer {
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 50px;
+
+    /* border: 2px solid slateblue; */
+
+}
+
+.footer img {
+    width: 5.3vw;
+}
+
+@media (max-width:768px) {
+    .navbar__logo {
+        justify-content: center;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .main__img img {
+        width: 200px;
+        justify-content: center;
+        height: 200px;
+        border-radius: 100px;
+
+
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width:480px) {
+    .navbar__logo {
+        justify-content: center;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .main__img img {
+        width: 100px;
+        justify-content: center;
+        height: 100px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
